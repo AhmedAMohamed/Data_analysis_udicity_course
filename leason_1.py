@@ -1,5 +1,6 @@
 __author__ = 'AhmedA'
 import unicodecsv as csvReader
+import matplotlib.pyplot as plt
 
 def readCsvFiles (fileName):
     with open(fileName, 'rb') as f:
@@ -44,3 +45,10 @@ for i in all:
         sur.add(student)
 
 print(len(sur))
+
+
+
+data = [1, 2, 1, 3, 3, 1, 4, 2]
+
+plt.hist(data)
+plt.show()
